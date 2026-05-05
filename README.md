@@ -4,6 +4,8 @@ Last reviewed: May 5, 2026
 
 This repo documents a hands-on GNS3 bring-up and early networking lab sequence completed on a Windows 11 Pro workstation using Hyper-V and the GNS3 VM.
 
+If I were walking a hiring manager through one networking repo first, this would be the one. It shows not just the final working topology, but the actual progression from platform setup problems to a working routed lab with evidence for controller troubleshooting, node-template repair, subnetting, ARP, and default-gateway behavior.
+
 The work started as a practical setup and troubleshooting session, then progressed into three core networking exercises:
 
 - same-subnet host connectivity
@@ -11,6 +13,13 @@ The work started as a practical setup and troubleshooting session, then progress
 - inter-subnet routing through a basic Linux router
 
 It is written as a portfolio-ready case study backed by screenshots from the actual session.
+
+## Why This Repo Matters
+
+- It starts with a broken or incomplete lab platform and shows how the environment was made usable.
+- It uses simple topologies to prove specific concepts instead of skipping straight to larger, harder-to-explain builds.
+- It ties the screenshots to concrete networking concepts that matter for Network+, desktop support, and junior infrastructure roles.
+- It includes both failure states and successful validation, which is stronger evidence than only showing the finished state.
 
 ## Objective
 
