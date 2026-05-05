@@ -14,6 +14,15 @@ The work started as a practical setup and troubleshooting session, then progress
 
 It is written as a portfolio-ready case study backed by screenshots from the actual session.
 
+## Start Here
+
+If you only review four things in this repo, use these:
+
+1. [05-two-host-same-subnet-ping.png](images/05-two-host-same-subnet-ping.png) for the first successful basic connectivity test
+2. [07-cross-compute-link-error.png](images/07-cross-compute-link-error.png) for the platform-side troubleshooting constraint
+3. [08-alpine-router-interface-config.png](images/08-alpine-router-interface-config.png) for the actual router configuration
+4. [09-pc1-routing-success-and-arp.png](images/09-pc1-routing-success-and-arp.png) for proof of gateway use, ARP behavior, and routed communication
+
 ## Why This Repo Matters
 
 - It starts with a broken or incomplete lab platform and shows how the environment was made usable.
