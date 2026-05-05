@@ -14,6 +14,10 @@ The work started as a practical setup and troubleshooting session, then progress
 
 It is written as a portfolio-ready case study backed by screenshots from the actual session.
 
+Social preview asset:
+
+- [assets/social-preview.png](assets/social-preview.png)
+
 ## Start Here
 
 If you only review four things in this repo, use these:
