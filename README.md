@@ -24,7 +24,7 @@ If you only review four things in this repo, use these:
 
 1. [05-two-host-same-subnet-ping.png](images/05-two-host-same-subnet-ping.png) for the first successful basic connectivity test
 2. [07-cross-compute-link-error.png](images/07-cross-compute-link-error.png) for the platform-side troubleshooting constraint
-3. [08-alpine-router-interface-config.png](images/08-alpine-router-interface-config.png) for the actual router configuration
+3. [08b-routed-topology-final.png](images/08b-routed-topology-final.png) for the clean final two-subnet layout
 4. [09-pc1-routing-success-and-arp.png](images/09-pc1-routing-success-and-arp.png) for proof of gateway use, ARP behavior, and routed communication
 
 ## Why This Repo Matters
@@ -79,8 +79,8 @@ Screenshots are stored in [`images/`](images/).
 6. [06-alpine-router-template-start-command.png](images/06-alpine-router-template-start-command.png) - Alpine Docker template creation for a simple router appliance
 7. [07-cross-compute-link-error.png](images/07-cross-compute-link-error.png) - compute-placement error when trying to link nodes across `MAIN-PC` and `GNS3 VM`
 8. [08-alpine-router-interface-config.png](images/08-alpine-router-interface-config.png) - router interfaces configured with `192.168.10.1/24` and `192.168.20.1/24`, plus IPv4 forwarding
-9. [09-pc1-routing-success-and-arp.png](images/09-pc1-routing-success-and-arp.png) - PC1 reaches its gateway and the remote subnet; ARP shows the gateway MAC
-10. [10-pc2-routing-success-and-arp.png](images/10-pc2-routing-success-and-arp.png) - PC2 reaches its gateway and the remote subnet from the opposite side
+9. [08b-routed-topology-final.png](images/08b-routed-topology-final.png) - clean final topology showing the two-subnet layout used for routed validation
+10. [09-pc1-routing-success-and-arp.png](images/09-pc1-routing-success-and-arp.png) - PC1 reaches its gateway and the remote subnet; ARP shows the gateway MAC
 
 ## Topology Progression
 
@@ -200,6 +200,16 @@ Why this matters:
 
 Once the topology placement was corrected, the Alpine router was configured with one interface in each subnet and IPv4 forwarding enabled.
 
+The final layout was intentionally simple:
+
+- one VPCS endpoint on `192.168.10.0/24`
+- one VPCS endpoint on `192.168.20.0/24`
+- one Alpine router with an interface in each subnet
+
+Evidence:
+
+- [08b-routed-topology-final.png](images/08b-routed-topology-final.png)
+
 Commands shown in the evidence:
 
 ```sh
@@ -239,7 +249,6 @@ From PC2:
 Evidence:
 
 - [09-pc1-routing-success-and-arp.png](images/09-pc1-routing-success-and-arp.png)
-- [10-pc2-routing-success-and-arp.png](images/10-pc2-routing-success-and-arp.png)
 
 This is the core lesson of the repo:
 

@@ -31,9 +31,9 @@ This lab documents the first successful GNS3 environment bring-up and three foun
   - [04-vpcs-executable-path.png](images/04-vpcs-executable-path.png)
   - [05-two-host-same-subnet-ping.png](images/05-two-host-same-subnet-ping.png)
 - Routed lab:
+  - [08b-routed-topology-final.png](images/08b-routed-topology-final.png)
   - [08-alpine-router-interface-config.png](images/08-alpine-router-interface-config.png)
   - [09-pc1-routing-success-and-arp.png](images/09-pc1-routing-success-and-arp.png)
-  - [10-pc2-routing-success-and-arp.png](images/10-pc2-routing-success-and-arp.png)
 
 ## Core Concepts Reinforced
 
